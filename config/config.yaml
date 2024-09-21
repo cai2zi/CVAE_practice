@@ -1,0 +1,21 @@
+# configs/config.yaml
+
+train:
+  data_path: "./dataset/processed"
+  batch_size: 128
+  epochs: 1000
+  lr: 0.001
+  save_model_path: "./outputs/models/"
+  cond_dim: 26
+
+generate:
+  model_path: "./outputs/models/vae_model.pth"
+  output_dir: "./outputs/generated_images"
+  num_images: 64
+
+vae_model:
+  encoder_layers: [512, 256, 128]
+  decoder_layers: [128, 256, 512]
+  input_dim: 9216
+  latent_dim: 128
+  activation_function: "leaky_relu" 
