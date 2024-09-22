@@ -1,0 +1,30 @@
+nohup: ignoring input
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: zi386002 (zi386002-). Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: Tracking run with wandb version 0.18.1
+wandb: Run data is saved locally in /root/VAE/CVAE_practice/wandb/run-20240922_021623-gmf9l1pw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run latent_dim128
+wandb: ⭐️ View project at https://wandb.ai/zi386002-/CVAE_practice
+wandb: 🚀 View run at https://wandb.ai/zi386002-/CVAE_practice/runs/gmf9l1pw
+/root/VAE/CVAE_practice
+Epoch [1/1000000], Batch [0], Loss: 6389.1445
+Epoch [1/1000000], Batch [20], Loss: 3059.0331
+Epoch 1, Average loss: 4207.4621
+Traceback (most recent call last):
+  File "/root/VAE/CVAE_practice/train.py", line 49, in <module>
+    train_model(cvae=cvae, train_loader=train_loader,
+  File "/root/VAE/CVAE_practice/utils/train_utils.py", line 36, in train_model
+    torch.save(cvae.state_dict(),save_path)
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/serialization.py", line 627, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/serialization.py", line 501, in _open_zipfile_writer
+    return container(name_or_buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/serialization.py", line 472, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Parent directory ./outputs/latent_dim128 does not exist.
+[1;34mwandb[0m: 🚀 View run [33mlatent_dim128[0m at: [34mhttps://wandb.ai/zi386002-/CVAE_practice/runs/gmf9l1pw[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20240922_021623-gmf9l1pw/logs[0m

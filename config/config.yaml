@@ -2,14 +2,15 @@
 
 train:
   data_path: "./dataset/processed"
-  batch_size: 128
-  epochs: 1000
+  exp_name: "latent_dim128"
+  batch_size: 1024
+  epochs: 1000000
   lr: 0.001
-  save_model_path: "./outputs/models/"
+  save_model_path: "./outputs/latent_dim128/"
   cond_dim: 26
 
 generate:
-  model_path: "./outputs/models/vae_model.pth"
+  model_path: "./outputs/latent_dim128/vae_model_large_mlp.pth"
   output_dir: "./outputs/generated_images"
   num_images: 64
 
