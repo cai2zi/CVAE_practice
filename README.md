@@ -123,4 +123,4 @@ python generate.py
 
 本项目已上传至 GitHub，欢迎 Star 和 Fork：
 
-[https://github.com/yourusername/CVAE-Letter-Generation](https://github.com/yourusername/CVAE-Letter-Generation)
+[[https://github.com/yourusername/CVAE-Letter-Generation](https://github.com/yourusername/CVAE-Letter-Generation)](https://github.com/cai2zi/CVAE_practice)
