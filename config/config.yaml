@@ -10,9 +10,10 @@ train:
   cond_dim: 26
 
 generate:
-  model_path: "./outputs/latent_dim128/vae_model_large_mlp.pth"
+  model_path: "./outputs/latent_space128.pth"
   output_dir: "./outputs/generated_images"
-  num_images: 64
+  num_images: 20
+  name: "latent_space128.png"
 
 vae_model:
   encoder_layers: [512, 256, 128]
